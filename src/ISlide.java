@@ -5,12 +5,13 @@ public interface ISlide {
     void setImages(ArrayList<IImage> value);
     void setTags(ArrayList<String> value);
     void setImageAmount(int value);
-    void setNext(Slide value);
+    void setNext(ISlide value);
 
     ArrayList<IImage> getImages();
     ArrayList<String> getTags();
     int getImageAmount();
     ISlide getNext();
+    void addTags(ArrayList<String> tags);
 
     //Methods
     void addImage(IImage image);
