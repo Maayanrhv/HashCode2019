@@ -32,6 +32,6 @@ public class Image implements IImage {
     }
     private int id;
     private int tagsAmount;
-
+    private Orientation orient;
     
 }

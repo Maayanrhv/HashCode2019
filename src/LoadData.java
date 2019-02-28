@@ -14,7 +14,7 @@ public class LoadData {
      * @param data - the List<String>. 
      * @param fileName - the path to the file that holds the data
      */
-    public List<Slide> LoadData(String fileName) {
+    public List<Slide> load(String fileName) {
         BufferedReader reader = null; 
         try {
             // read the first line as a String
@@ -26,10 +26,11 @@ public class LoadData {
             // go over all the images and create them 
             for (int i = 0; i < numOfPictures; i++) {
                 String[] line = reader.readLine().split(" ");
-                Image image = CreateImage(line, i);
+                IImage image = CreateImage(line, i);
                 
                 
             }
+            return new ArrayList<Slide>();
         } catch (IOException e) {
             e.printStackTrace();
         } finally {
@@ -40,10 +41,11 @@ public class LoadData {
                 e.printStackTrace();
             }
         }
+        return null;
     }
     
-    public Image CreateImage(String[] line, int id) {
-        Image image = new Image();
+    public IImage CreateImage(String[] line, int id) {
+        IImage image = new Image();
         image.setId(id);
         image.setOrient(line[0].charAt(0));
         image.setTagsAmount(Integer.parseInt(line[1]));

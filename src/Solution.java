@@ -6,9 +6,10 @@ import java.util.List;
  */
 public class Solution {
     public static void main(String[] args) {
-        List<Slide> slides = LoadData.LoadData("a_example.txt");
+        LoadData ld = new LoadData();
+        List<Slide> slides = ld.load("a_example.txt");
         
-        DoSomething(data);
+
         
         System.out.println("hi");
     }
