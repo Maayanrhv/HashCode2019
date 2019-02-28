@@ -12,10 +12,10 @@ public interface ISlide {
     ArrayList<String> getTags();
     int getImageAmount();
     ISlide getNext();
-    void addTags(List<String> tags);
 
     //Methods
+    void addTags(List<String> tags);
     void addImage(IImage image);
+    boolean equals(ISlide slide);
     int getAmountOfJointTags(ISlide slide);
-
 }
