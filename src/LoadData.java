@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class LoadData {
+public class LoadData implements ILoadData{
 
     private boolean vFlag;
     
