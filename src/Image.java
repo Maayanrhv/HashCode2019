@@ -1,8 +1,7 @@
 import java.util.List;
 
-enum Orientation {H, V};
 
-public class Image {
+public class Image implements IImage {
     private List<String> tags;
     public List<String> getTags() {
         return tags;

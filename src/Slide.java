@@ -1,4 +1,4 @@
 
-public class Slide {
+public class Slide implements ISlide {
 
 }
