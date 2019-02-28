@@ -22,7 +22,6 @@ public class GreedySlidesSearch {
         ISlide currentSlide = this.start;
         slides.remove(currentSlide);
 
-
         while (!slides.isEmpty()) {
             ISlide next = this.findBestNextSlide(slides, currentSlide);
             currentSlide.setNext(next);
@@ -32,7 +31,7 @@ public class GreedySlidesSearch {
         return this.start;
     }
 
-    public ISlide findBestNextSlide(HashSet<ISlide> slides, ISlide currentSlide) {
+    private ISlide findBestNextSlide(HashSet<ISlide> slides, ISlide currentSlide) {
         int maxPayoff = -1;
         ISlide next = slides.iterator().next();
         for (ISlide slide: slides) {
