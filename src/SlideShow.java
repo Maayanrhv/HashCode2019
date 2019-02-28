@@ -1,4 +1,4 @@
 
-public class SlideShow {
+public class SlideShow implements ISlideShow {
 
 }
