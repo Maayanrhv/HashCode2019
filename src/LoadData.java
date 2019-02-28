@@ -1,4 +1,5 @@
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.List;
@@ -10,7 +11,7 @@ public class LoadData {
      * @param data - the List<String>. 
      * @param fileName - the path to the file that holds the data
      */
-    private void LoadData(List<String> data, String fileName) {
+    static void LoadData(List<String> data, String fileName) {
         BufferedReader reader = null; 
         try {
             // read the first line as a String
