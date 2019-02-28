@@ -7,7 +7,7 @@ import java.util.List;
 public class Solution {
     public static void main(String[] args) {
         List<String> data = new ArrayList<String>();
-        LoadData.LoadData(data, "inputFile.in");
+        LoadData.LoadData(data, "a_example.txt");
         
         DoSomething(data);
         
