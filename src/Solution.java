@@ -8,7 +8,7 @@ import java.util.Map;
 public class Solution {
     public static void main(String[] args) {
         LoadData ld = new LoadData();
-        List<Slide> slides = ld.load("a_example.txt");
+        List<ISlide> slides = ld.load("a_example.txt");
 
 
 

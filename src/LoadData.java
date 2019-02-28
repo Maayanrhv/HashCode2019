@@ -36,6 +36,11 @@ public class LoadData implements ILoadData{
             for (int i = 0; i < numOfPictures; i++) {
                 String[] line = reader.readLine().split(" ");
                 IImage image = CreateImage(line, i);
+                
+                // ignore images with 1 tag
+                if (image.getTagsAmount() == 1)
+                    continue;
+                
                 ISlide slide = new Slide();
 
                 // address vertical images
