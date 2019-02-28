@@ -8,7 +8,7 @@ public class Slide implements ISlide {
     private ArrayList<IImage> images = new ArrayList<>();
     private ArrayList<String> tags = new ArrayList<>();
     private int imageAmount;
-    ISlide next;
+    private ISlide next;
 
     //Constructors
     public Slide(){ }
@@ -23,7 +23,7 @@ public class Slide implements ISlide {
     public void setImageAmount(int value){
         this.imageAmount = value;
     }
-    public void setNext(Slide value){
+    public void setNext(ISlide value){
         this.next = value;
     }
 

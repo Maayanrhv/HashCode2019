@@ -53,8 +53,9 @@ public class LoadData implements ILoadData{
                 }
                 slide.addTags(image.getTags());
                 slides.add(slide);
-                // enter to map
                 
+                // enter to map
+                MapSlide(slide);
             }
             return new ArrayList<ISlide>();
         } catch (IOException e) {
@@ -70,6 +71,17 @@ public class LoadData implements ILoadData{
         return null;
     }
     
+    private void MapSlide(ISlide slide) {
+        List<ISlide> slidesVal;
+        int key = slide.getTags().size();
+        if (this.tagsToSlides.containsKey(key)) {
+            slidesVal = this.tagsToSlides.get(key);
+        }
+        slidesVal = new ArrayList<ISlide>();
+        slidesVal.add(slide);
+        this.tagsToSlides.put(slide.getTags().size(), slidesVal);
+    }
+
     public IImage CreateImage(String[] line, int id) {
         IImage image = new Image();
         image.setId(id);
@@ -83,7 +95,6 @@ public class LoadData implements ILoadData{
 
     @Override
     public Map<Integer, List<ISlide>> getTagAmountToSlides() {
-        // TODO Auto-generated method stub
-        return null;
+        return this.tagsToSlides;
     }
 }
