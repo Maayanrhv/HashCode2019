@@ -33,7 +33,6 @@ public class Image {
     }
     private int id;
     private int tagsAmount;
-    private Orientation orient;
 
     
 }

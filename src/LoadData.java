@@ -7,12 +7,14 @@ import java.util.List;
 
 public class LoadData {
 
+    private boolean vFlag;
+    
     /**
      * LoadData reads lines from a file to a List<String>.
      * @param data - the List<String>. 
      * @param fileName - the path to the file that holds the data
      */
-    static List<Slide> LoadData(String fileName) {
+    public List<Slide> LoadData(String fileName) {
         BufferedReader reader = null; 
         try {
             // read the first line as a String
@@ -21,16 +23,11 @@ public class LoadData {
             int numOfPictures = Integer.parseInt(firstLine);
             List<Slide> slides = new ArrayList<Slide>();
             
-            // go over all the records and add them to the records list 
+            // go over all the images and create them 
             for (int i = 0; i < numOfPictures; i++) {
-                Image image = new Image();
                 String[] line = reader.readLine().split(" ");
-                image.setId(i);
-                image.setOrient(line[0].charAt(0));
-                image.setTagsAmount(Integer.parseInt(line[1]));
-                for (int j = 0; j < image.getTagsAmount(); j++) {
-                    image.addTag(line[1+j]);
-                }
+                Image image = CreateImage(line, i);
+                
                 
             }
         } catch (IOException e) {
@@ -43,5 +40,16 @@ public class LoadData {
                 e.printStackTrace();
             }
         }
+    }
+    
+    public Image CreateImage(String[] line, int id) {
+        Image image = new Image();
+        image.setId(id);
+        image.setOrient(line[0].charAt(0));
+        image.setTagsAmount(Integer.parseInt(line[1]));
+        for (int j = 0; j < image.getTagsAmount(); j++) {
+            image.addTag(line[1+j]);
+        }
+        return image;
     }
 }
