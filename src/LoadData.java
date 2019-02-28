@@ -9,6 +9,10 @@ public class LoadData {
 
     private boolean vFlag;
     
+    public LoadData() {
+        this.vFlag = false;
+    }
+    
     /**
      * LoadData reads lines from a file to a List<String>.
      * @param data - the List<String>. 
