@@ -22,7 +22,7 @@ public class GreedySlidesSearch {
         ISlide currentSlide = this.start;
         while (!slides.isEmpty()) {
             ISlide next = this.findBestNextSlide(slides, currentSlide);
-//            currentSlide
+            currentSlide.setNext(next);
 
 
 

@@ -11,6 +11,7 @@ public interface ISlide {
     ArrayList<String> getTags();
     int getImageAmount();
     ISlide getNext();
+    void addTags(ArrayList<String> tags);
 
     //Methods
     void addImage(IImage image);
