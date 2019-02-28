@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="d8f6167d-edde-4114-9461-41d2c9d99b03" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GreedySlidesSearch.java" afterPath="$PROJECT_DIR$/src/GreedySlidesSearch.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ISlide.java" afterPath="$PROJECT_DIR$/src/ISlide.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,18 +24,18 @@
               <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#372#373#0" expanded="true" />
-                <element signature="e#399#400#0" expanded="true" />
+                <element signature="e#373#374#0" expanded="true" />
+                <element signature="e#400#401#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GreedySlidesSearch.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="GreedySlidesSearch.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/GreedySlidesSearch.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="188">
-              <caret line="23" column="19" lean-forward="true" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
+            <state relative-caret-position="238">
+              <caret line="54" column="35" lean-forward="true" selection-start-line="54" selection-start-column="35" selection-end-line="54" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -82,7 +84,7 @@
             <state relative-caret-position="100">
               <caret line="9" column="42" lean-forward="false" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
               <folding>
-                <marker date="1551385248569" expanded="true" signature="2861:2868" ph="{...}" />
+                <marker date="1551387266355" expanded="true" signature="3396:3403" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -100,12 +102,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ISlide.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ISlide.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ISlide.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="13" column="41" lean-forward="false" selection-start-line="13" selection-start-column="41" selection-end-line="13" selection-end-column="41" />
-              <folding />
+            <state relative-caret-position="146">
+              <caret line="10" column="23" lean-forward="false" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -197,8 +201,8 @@
         <option value="$PROJECT_DIR$/src/ILoadData.java" />
         <option value="$PROJECT_DIR$/src/Solution.java" />
         <option value="$PROJECT_DIR$/src/Slide.java" />
-        <option value="$PROJECT_DIR$/src/GreedySlidesSearch.java" />
         <option value="$PROJECT_DIR$/src/ISlide.java" />
+        <option value="$PROJECT_DIR$/src/GreedySlidesSearch.java" />
       </list>
     </option>
   </component>
@@ -270,8 +274,8 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="UPDATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/ILoadData.java</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/src/LoadData.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Solution.java</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Created" />
@@ -279,6 +283,7 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="CREATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/DumpData.java</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Deleted" />
@@ -723,7 +728,14 @@
       <option name="project" value="LOCAL" />
       <updated>1551385420636</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="for shir &lt;3">
+      <created>1551385429244</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1551385429244</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -805,7 +817,7 @@
         <state relative-caret-position="100">
           <caret line="9" column="42" lean-forward="false" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
           <folding>
-            <marker date="1551385248569" expanded="true" signature="2861:2868" ph="{...}" />
+            <marker date="1551387266355" expanded="true" signature="3396:3403" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -847,8 +859,8 @@
           <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#372#373#0" expanded="true" />
-            <element signature="e#399#400#0" expanded="true" />
+            <element signature="e#373#374#0" expanded="true" />
+            <element signature="e#400#401#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -893,21 +905,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/GreedySlidesSearch.java">
+    <entry file="file://$PROJECT_DIR$/src/ISlide.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="23" column="19" lean-forward="true" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
+        <state relative-caret-position="146">
+          <caret line="10" column="23" lean-forward="false" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ISlide.java">
+    <entry file="file://$PROJECT_DIR$/src/GreedySlidesSearch.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="13" column="41" lean-forward="false" selection-start-line="13" selection-start-column="41" selection-end-line="13" selection-end-column="41" />
-          <folding />
+        <state relative-caret-position="238">
+          <caret line="54" column="35" lean-forward="true" selection-start-line="54" selection-start-column="35" selection-end-line="54" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

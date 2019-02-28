@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.List;
 
 public interface ISlide {
     //Getters & Setters
@@ -11,8 +12,10 @@ public interface ISlide {
     ArrayList<String> getTags();
     int getImageAmount();
     ISlide getNext();
-    void addTags(ArrayList<String> tags);
+    void addTags(List<String> tags);
 
     //Methods
     void addImage(IImage image);
+    int getAmountOfJointTags(ISlide slide);
+
 }
