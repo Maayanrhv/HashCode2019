@@ -12,17 +12,26 @@ public class LoadData {
      * @param data - the List<String>. 
      * @param fileName - the path to the file that holds the data
      */
-    static void LoadData(List<String[]> data, String fileName) {
+    static List<Slide> LoadData(String fileName) {
         BufferedReader reader = null; 
         try {
             // read the first line as a String
             reader = new BufferedReader(new FileReader(new File(fileName)));
             String firstLine = reader.readLine();
             int numOfPictures = Integer.parseInt(firstLine);
-
+            List<Slide> slides = new ArrayList<Slide>();
+            
             // go over all the records and add them to the records list 
             for (int i = 0; i < numOfPictures; i++) {
-                data.add(reader.readLine().split(" "));
+                Image image = new Image();
+                String[] line = reader.readLine().split(" ");
+                image.setId(i);
+                image.setOrient(line[0].charAt(0));
+                image.setTagsAmount(Integer.parseInt(line[1]));
+                for (int j = 0; j < image.getTagsAmount(); j++) {
+                    image.addTag(line[1+j]);
+                }
+                
             }
         } catch (IOException e) {
             e.printStackTrace();
